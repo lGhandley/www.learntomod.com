@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="logo" width="600" height="100" viewBox="-600 50 1000 75">
+  <filter id="hueRotate">
+    <feColorMatrix id="hueMatrix" type="hueRotate" values="12.135960000002136"></feColorMatrix>
+  </filter>
+
+  <defs>
+
+    <style type="text/css"><![CDATA[
+@import url(https://fonts.googleapis.com/css?family=Oxygen:300);
+
+.poly {
+  fill: none ;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+text{
+  font-family: 'Oxygen', sans-serif;
+  color:white;
+  letter-spacing: 20px;
+  font-weight: 300;
+}
+
+#text1{
+  opacity: 0;
+}
+
+#text2{
+  opacity: 0;
+}
+
+
+#text3{
+  opacity: 0;
+}
+    ]]></style>
+
+
+    <linearGradient id="gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9d69c9"></stop>
+      <stop offset="100%" stop-color="#d4722d"></stop>
+    </linearGradient>
+    
+    <mask id="mask" x="0" y="0" width="100%" height="100%">
+    <g transform="translate(147,55)">
+      <g transform="scale(0.4)">
+
+    <g id="payload1">
+
+    <polygon class="poly back" points="0,91.422 101,91.422 101,191.422 0,191.422"></polygon><polygon class="poly up" points="70.711,20.711 171.711,20.711 101,91.422 0,91.422"></polygon><polygon class="poly front" points="70.711,20.711 171.711,20.711 171.711,120.711 70.711,120.711"></polygon><polygon class="poly bottom" points="70.711,120.71100000000001 171.711,120.71100000000001 101,191.422 0,191.422"></polygon></g>
+
+    <g id="payload2">
+
+    <polygon class="poly back" points="0,-50 101,-50 101,50 0,50"></polygon><polygon class="poly up" points="70.711,20.711 171.711,20.711 101,-50 0,-50"></polygon><polygon class="poly front" points="70.711,20.711 171.711,20.711 171.711,120.711 70.711,120.711"></polygon><polygon class="poly bottom" points="70.711,120.71100000000001 171.711,120.71100000000001 101,50 0,50"></polygon></g>
+
+    <g id="payload3">
+
+    <polygon class="poly back" points="0,91.422 101,91.422 101,191.422 0,191.422"></polygon><polygon class="poly up" points="-70.711,20.711 30.289,20.711 101,91.422 0,91.422"></polygon><polygon class="poly front" points="-70.711,20.711 30.289,20.711 30.289,120.711 -70.711,120.711"></polygon><polygon class="poly bottom" points="-70.711,120.71100000000001 30.289,120.71100000000001 101,191.422 0,191.422"></polygon></g>
+
+    <g id="payload4">
+
+    <polygon class="poly back" points="0,-50 101,-50 101,50 0,50"></polygon><polygon class="poly up" points="-70.711,20.711 30.289,20.711 101,-50 0,-50"></polygon><polygon class="poly front" points="-70.711,20.711 30.289,20.711 30.289,120.711 -70.711,120.711"></polygon><polygon class="poly bottom" points="-70.711,120.71100000000001 30.289,120.71100000000001 101,50 0,50"></polygon></g>
+      </g>
+      </g>
+  </mask>
+  </defs>
+  
+
+  
+    <g filter="url(#hueRotate)">
+      <circle cx="170" cy="80" r="60" fill="url(#gradient)" stroke="none" mask="url(#mask)"></circle>
+    </g>
+  
+  
+      <circle id="text2" cx="167" cy="83" r="23" fill="none" stroke="black" stroke-width="4" style="opacity: 1;"></circle>
+
+
+      <text id="text1" x="-557" y="105" font-family="Oxygen" font-size="60" fill="black" style="opacity: 1;">
+    MULTI-DIMENSI
+  </text>
+  
+        <text id="text3" x="217" y="105" font-family="Oxygen" font-size="60" fill="black" style="opacity: 1;">
+    NAL
+  </text>
+</svg>

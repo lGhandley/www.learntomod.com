@@ -1,0 +1,42 @@
+jQuery(document).ready(function($){
+	$('#mobile-menu').click(function(){
+		$('#mobile-menu i').toggleClass('icons8-delete');
+		$('#mobile-menu i').toggleClass('icons8-menu');
+		var status = $('#header nav').data('status')
+		if(!status || status == 'closed') {
+	        $('#header nav').data('status','open').addClass('open');
+			$('#wrapper').stop().animate({
+				left:'-230px'
+	    	},300);
+			$('#header nav ul').stop().animate({
+				right:'0'
+	    	},300);
+		} else {
+	        $('#header nav').data('status','closed').removeClass('open');
+			$('#wrapper').stop().animate({
+				left:'0'
+	    	},300);
+			$('#header nav ul').stop().animate({
+				right:'-230px'
+	    	},300);
+		}
+		return false;
+	});
+
+	$('#header nav li a').click(function(){
+		if ($('#header nav').hasClass('open')) {
+			var submenu = $(this).siblings('ul');
+			if (submenu.size() > 0) {
+				submenu.toggleClass('active');
+				return false;
+			}
+		}
+	});
+	
+	//$("#header").stick_in_parent();
+	/*$(".page-menu").stick_in_parent({
+		offset_top: 78
+	});*/
+  	
+	
+});

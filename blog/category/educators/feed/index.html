@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Educators &#8211; LearnToMod</title>
+	<atom:link href="http://www.learntomod.com/blog/category/educators/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.learntomod.com</link>
+	<description>Code with Minecraft, Minecraft Modding Software</description>
+	<lastBuildDate>
+	Sun, 17 May 2020 03:03:27 +0000	</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.4</generator>
+
+<image>
+	<url>http://www.learntomod.com/wp-content/uploads/2016/04/LearnToMod-Favicon.png</url>
+	<title>Educators &#8211; LearnToMod</title>
+	<link>http://www.learntomod.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>LearnToMod on a Raspberry Pi</title>
+		<link>http://www.learntomod.com/blog/educators/learntomod-raspberry-pi/</link>
+				<comments>http://www.learntomod.com/blog/educators/learntomod-raspberry-pi/#respond</comments>
+				<pubDate>Thu, 19 May 2016 17:36:03 +0000</pubDate>
+		<dc:creator><![CDATA[Lindsey Handley]]></dc:creator>
+				<category><![CDATA[Educators]]></category>
+		<category><![CDATA[education]]></category>
+		<category><![CDATA[k-12]]></category>
+		<category><![CDATA[learntomod]]></category>
+		<category><![CDATA[minecraft]]></category>
+		<category><![CDATA[raspberry pi]]></category>
+
+		<guid isPermaLink="false">http://www.learntomod.com/?p=1629</guid>
+				<description><![CDATA[<p>Recently, we experimented with connecting LearnToMod to a Raspberry Pi. Now we're able to control LEDs connected to the Raspberry Pi from inside Minecraft! Check out our instructions for how to do this yourself!</p>
+<p>The post <a rel="nofollow" href="http://www.learntomod.com/blog/educators/learntomod-raspberry-pi/">LearnToMod on a Raspberry Pi</a> appeared first on <a rel="nofollow" href="http://www.learntomod.com">LearnToMod</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<h2>Real Life RGB Glowstone</h2>
+<p>We’ve been experimenting with the Raspberry Pi and LearnToMod to create some pretty awesome mods. If you haven’t heard of the Raspberry Pi yet, it’s a $35 microcomputer that is about the size of a credit card! Not only is it fast enough to run a LearnToMod Minecraft server, it allows us to control things in the real world.</p>
+<p>Using the Raspberry Pi’s GPIO (General Purpose Input/Output) pins, we can integrate anything from LED’s (Light Emitting Diodes), buttons, and motors, to bigger things like cameras, robots, and automatic cat feeding machines!</p>
+<div id="attachment_1632" style="width: 510px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1632" class="wp-image-1632" src="http://www.learntomod.com/wp-content/uploads/2016/05/Raspberry-Pi-LearnToMod-300x225.jpg" alt="Raspberry Pi + LearnToMod" width="500" height="375" srcset="http://www.learntomod.com/wp-content/uploads/2016/05/Raspberry-Pi-LearnToMod-300x225.jpg 300w, http://www.learntomod.com/wp-content/uploads/2016/05/Raspberry-Pi-LearnToMod-768x576.jpg 768w, http://www.learntomod.com/wp-content/uploads/2016/05/Raspberry-Pi-LearnToMod.jpg 908w" sizes="(max-width: 500px) 100vw, 500px" /><p id="caption-attachment-1632" class="wp-caption-text">LEFT: Raspberry Pi LTM Server, RIGHT: Remotely connected laptop running Minecraft 1.8.9</p></div>
+<p>Of course, it’s always a good idea to start small. So here’s a project we made that controls an RGB LED by hitting different colored wool. Hitting a color once turns that color on. Hitting it again will turn that color off. This let’s us mix and match to create a total of seven different colors (red, green, blue, yellow, cyan, magenta, and white).</p>
+<p>&nbsp;</p>
+<div id="video-0uUOKnCfnvQ" class="arve-wrapper " data-arve-mode="normal"   itemscope itemtype="http://schema.org/VideoObject">
+<div class="arve-embed-container" style="padding-bottom: 56.25%"><iframe  src="//www.youtube.com/embed/0uUOKnCfnvQ?wmode=transparent&#038;iv_load_policy=3&#038;modestbranding=1&#038;rel=0&#038;autohide=1&#038;v=0uUOKnCfnvQ&#038;autoplay=0" class="arve-inner" allowfullscreen frameborder="0" scrolling="no" width="853" height="480"></iframe></div>
+<p><button class="arve-btn arve-btn-close arve-hidden">x</button></div>
+<p><a href="https://youtube.com/watch?v=0uUOKnCfnvQ" class="arve-hidden">https://youtube.com/watch?v=0uUOKnCfnvQ</a></p>
+<h2></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Want to try this yourself?</h2>
+<ol>
+<li>Setup a Raspberry Pi with the default Raspian OS and connect it to WiFi or LAN.</li>
+<li>Launch the browser on the Raspberry Pi and download the <a href="http://mod.learntomod.com/page/server-download">Offline LearnToMod Server</a>
+<ul>
+<li>Follow the instructions from the link to set up the server on a raspberry pi.
+<ul>
+<li>Ignore the steps to join the server. We’ll join the server remotely from another computer.</li>
+</ul>
+</li>
+<li>Follow the directions from the link to copy your LearnToMod mods to the spigot server.
+<ul>
+<li>Copy the JavaScript from my <a href="http://mod.learntomod.com/program_profiles/1264125">RGB Lamp Mod</a>
+<ul>
+<li>You must be logged in with a LearnToMod account</li>
+</ul>
+</li>
+<li>This mod will create a beacon that will match the color of the RGB LED and apply custom textures to the wool blocks.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Install the <a href="https://github.com/zhuowei/RaspberryJuice/blob/master/jars/raspberryjuice-1.7.jar" target="_blank">RaspberryJuice 1.7 Plugin</a>
+<ul>
+<li>Download this file and place it in the <strong>plugins</strong> folder of the learntomod server.</li>
+</ul>
+</li>
+<li>Assemble an RGB LED Circuit
+<ul>
+<li>Use 220 Ohm or 330 Ohm resistors on each color of an RGB LED (common cathode).</li>
+<li>Connect the common cathode to GND (<strong>Pin 6</strong>) on the Raspberry Pi’s GPIO.</li>
+<li>Connect the resistor end of each color signal to these pins:
+<ul>
+<li><strong>Red = Pin 11</strong></li>
+<li><strong>Green = Pin 12</strong></li>
+<li><strong>Blue = Pin 13</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Download my <a href="https://dl.dropboxusercontent.com/u/34574499/minecraft_rgb.py">minecraft_rgb</a> Python script to control the RGB LED
+<ul>
+<li>Place it in a folder on your desktop.</li>
+<li>This script will create 4 wool blocks and check for block hits (right-click with a sword).</li>
+<li>Each block hit will toggle the red, green, and blue pins respectively</li>
+<li>The black wool block will turn off all pins.</li>
+</ul>
+</li>
+<li>On a separate computer launch Minecraft running version<strong> 1.8.9</strong> (not Minecraft Pi Edition)
+<ul>
+<li>Go to <strong>Multiplayer</strong> and then <strong>Direct Connect</strong></li>
+<li>Type your raspberry pi’s ip address followed by “<strong>:25571</strong>”
+<ul>
+<li>To find out the ip address: Open a terminal on the Raspberry Pi and type:
+<ul>
+<li><strong>hostname –I</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Click <strong>Join Server</strong></li>
+</ul>
+</li>
+<li>Run your mods!
+<ul>
+<li>Open your mod chest and grab the rgb_lamp mod.</li>
+<li>Find a nice open spot and run the mod to create a beacon</li>
+<li>Find a new open spot next to the beacon and then switch over to the Raspberry Pi</li>
+<li>Open <strong>IDLE3</strong> and run the Python script
+<ul>
+<li>This will create the in-game “buttons”</li>
+</ul>
+</li>
+<li>Go back to your remote computer and equip your new diamond sword.</li>
+<li><strong>Right-click</strong> on each block to toggle different colors.</li>
+</ul>
+</li>
+</ol>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<p><img class="alignleft wp-image-1645 size-thumbnail" src="http://www.learntomod.com/wp-content/uploads/2016/05/headshot3-150x150.jpeg" alt="Jason Le" width="150" height="150" /><strong>Jason Le, ThoughtSTEM Teacher &amp; Curriculum Developer</strong> &#8211;</p>
+<p>As a graduate of Cal State Long Beach with a bachelor’s degree in Computer Engineering and a minor in Computer Science, Jason has worked on projects ranging from software applications to scratch built autonomous vehicles. His love for technology is equally matched by his passion for mentoring. He has designed, developed, and taught K-12 technology curriculum for various summer tech camps as well as in-school electives and after school programs.</p>
+<p>The post <a rel="nofollow" href="http://www.learntomod.com/blog/educators/learntomod-raspberry-pi/">LearnToMod on a Raspberry Pi</a> appeared first on <a rel="nofollow" href="http://www.learntomod.com">LearnToMod</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>http://www.learntomod.com/blog/educators/learntomod-raspberry-pi/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>
